@@ -7,9 +7,15 @@ This is a PyTorch implementation of Dropout Uncertainty on Mnist. The experiment
 
 1. Install Pytorch
 [Pytorch](http://pytorch.org/)
+[INSTALLING PREVIOUS VERSIONS OF PYTORCH](https://pytorch.org/get-started/previous-versions/)
+
+Use virtualenv create pytorch env.
 ```
-conda install pytorch torchvision -c pytorch
+virtualenv --no-site-packages -p python3.6 ~/cenv_pytorch
+source ~/venv_pytorch/bin/activate
+pip install torch==1.8.0+cu101 torchvision==0.9.0+cu101 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
+
 2. Clone this repository 
 ```
 git clone https://github.com/andyhahaha/Uncertainty_Mnist
